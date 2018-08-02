@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * 电脑对象 
- *
  */
 @Component
 public class Computer {

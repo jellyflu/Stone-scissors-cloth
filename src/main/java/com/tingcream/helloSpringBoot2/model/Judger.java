@@ -35,6 +35,4 @@ public class Judger {
 			return "抱歉，您输了，请再接再厉";
 		}
 	}
-	
-
 }

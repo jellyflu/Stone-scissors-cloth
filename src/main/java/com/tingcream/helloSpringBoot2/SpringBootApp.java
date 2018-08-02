@@ -20,27 +20,24 @@ import com.tingcream.helloSpringBoot2.model.Player;
 public class SpringBootApp  implements CommandLineRunner {
 	
 	
-	 public static void main(String[] args) throws Exception {
-
+   public static void main(String[] args) throws Exception {
 	        SpringApplication.run(SpringBootApp.class, args);
-
-	  }
-   
-	 
-	  @Autowired
-	  private  Player player ;//玩家
-	  
-	  @Autowired
-	  private Computer computer;//电脑
-	  
-	  @Autowired
-	  private Judger judger;//裁判
-	  
-	  
-	  /**
-	   * 石头、剪刀、布的游戏 
-	   * 
-	   */
+   }
+ 
+  @Autowired
+  private  Player player ;//玩家
+  
+  @Autowired
+  private Computer computer;//电脑
+  
+  @Autowired
+  private Judger judger;//裁判
+  
+  
+  /**
+   * 石头、剪刀、布的游戏 
+   * 
+   */
 	@Override
 	public void run(String... args) throws Exception {
  
@@ -82,15 +79,10 @@ public class SpringBootApp  implements CommandLineRunner {
 				String result = judger.judge(inputA, inputB);//比赛结果
 				System.out.println("比赛结果:"+result);//打印比赛结果
 			}
-			
 		} finally{
 			if(scanner!=null){
 				scanner.close();
 			}
 		}
-		
-		 
-		
 	}
-
 }
