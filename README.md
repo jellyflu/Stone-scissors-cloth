@@ -3,5 +3,7 @@
 
 # 运行截图
 
+`mvn spring-boot:run`
+
 ![截图1](https://raw.githubusercontent.com/jellyflu/pub_resouces/master/Stone-scissors-cloth/1.png) 
 
